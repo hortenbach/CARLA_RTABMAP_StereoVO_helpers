@@ -6,9 +6,7 @@ Collection of notes and helpers when using rtabmap in ROS2 for Visual Odometry w
 My workflow for recording new data is basically
 
 ```
-1) ./CarlaUE4.sh
-
-2) ros2 launch carla_spawn_objects carla_spawn_objects.launch.py town:=Town03 timeout:=10
+1) startscript.py
 
 3) ros2 run carla_vo stereo_syncronizer2
 
