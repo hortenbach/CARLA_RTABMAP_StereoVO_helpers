@@ -144,7 +144,7 @@ def plot2d_trajectories(gt, vo, rgbd, title='test', path='_'):
     p_ymin = min([min(p_des_y), min(p_stereo_y), min(p_rgbd_y)])
     offset = 20
     plt.ylim(ymax = p_ymax+offset, ymin = p_ymin+offset)
-    plt.xlim(xmax = p_xmin+offset, xmin =p_xmin+offset)
+    plt.xlim(xmax = p_xmax+offset, xmin =p_xmin+offset)
     # path=os.path.dirname(".")
     folder = os.path.basename(path)
     plt.savefig(f"{folder}.png")
