@@ -3,18 +3,12 @@ Collection of notes and helpers when using rtabmap in ROS2 for Visual Odometry w
 
 ## CARLA Notes
 
-My workflow for recording new data is basically
+My workflow for recording new data is
 
 ```
-1) startscript.py
+1) start.py
 
-3) ros2 run carla_vo stereo_syncronizer2
-
-4) ros2 launch carla_manual_control carla_manual_control.launch.py
-
-5) ros2 launch stereo_rtabmap_launch.py 
-
-6) ros2 bag record -a -o my_bag3000         
+2) ros2 bag record -a -o mydataset_01         
 ```
 BUT be careful with the default config file used for carla_spawn_objects.launch.py
 Theres a default MAP defined there and it will show up in your tf tree and it will interfere with
